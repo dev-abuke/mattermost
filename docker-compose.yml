@@ -26,7 +26,7 @@ services:
 
   mattermost:
     ports:
-      - 8065:8065
+      - 80:8065
       - 8443:8443/udp
     depends_on:
       - postgres
@@ -61,7 +61,7 @@ services:
       - MM_BLEVESETTINGS_INDEXDIR=/mattermost/bleve-indexes
 
       # additional settings
-      - MM_SERVICESETTINGS_SITEURL=https://http://mattermostvm.eastus.cloudapp.azure.com/
+      - MM_SERVICESETTINGS_SITEURL=https://rdx-mattermost.eastus.cloudapp.azure.com/
 
 # If you use rolling image tags and feel lucky watchtower can automatically pull new images and
 # instantiate containers from it. https://containrrr.dev/watchtower/
